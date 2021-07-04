@@ -6,7 +6,11 @@ namespace TestILCompiler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var mono = new MonoCecil();
+            mono.ExecuteHelloWorld();
+
+            var refl = new ReflectionEmit();
+            refl.ExecuteHelloWorld();
         }
     }
 }
